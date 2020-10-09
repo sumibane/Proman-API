@@ -27,6 +27,7 @@
     <!--External Modules-->
     <modules>
         <module>proman-api</module>
+        <module>proman-db</module>
     </modules>
 
 

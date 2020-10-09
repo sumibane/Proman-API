@@ -31,6 +31,7 @@
 
         <!--Plugins-->
         <plugins>
+            <!--To extract environment based on requirement like: @env@-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>

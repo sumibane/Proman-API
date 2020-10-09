@@ -26,8 +26,9 @@
     </dependencies>
     <!--External Modules-->
     <modules>
-        <module>proman-api</module>
         <module>proman-db</module>
+        <module>proman-service</module>
+        <module>proman-api</module>
     </modules>
 
 

@@ -23,7 +23,7 @@ public class SignupController {
     private SignupBusinessService signupBusinessService;
 
     @RequestMapping(method = RequestMethod.POST, path = "/signup",
-            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+            consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SignupUserResponse> signup(final SignupUserRequest signupUserRequest){
 
         /*Create a new user entity and pass it to the service for dao to persist.*/
@@ -42,7 +42,7 @@ public class SignupController {
         final UserEntity createdUserEntity = signupBusinessService.signup(userEntity);
 
         SignupUserResponse userResponse = new SignupUserResponse().id(createdUserEntity.getUuid())
-                .status("Registered");
+                .status("REGISTERED");
 
         return new ResponseEntity<SignupUserResponse>(userResponse,HttpStatus.CREATED);
     }

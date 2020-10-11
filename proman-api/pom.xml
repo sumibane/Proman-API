@@ -40,6 +40,12 @@
             <version>2.6.1</version>
             <scope>compile</scope>
         </dependency>
+        <!--Fix Dependencies-->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -34,7 +34,6 @@ public class SignupController {
         userEntity.setEmail(signupUserRequest.getEmailAddress());
         userEntity.setMobilePhone(signupUserRequest.getMobileNumber());
         userEntity.setPassword(signupUserRequest.getPassword());
-        userEntity.setSalt("1234abc");
         userEntity.setStatus(4);
         userEntity.setCreatedAt(ZonedDateTime.now());
         userEntity.setCreatedBy("api-backend");

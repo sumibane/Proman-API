@@ -44,6 +44,6 @@ public class SignupController {
         SignupUserResponse userResponse = new SignupUserResponse().id(createdUserEntity.getUuid())
                 .status("REGISTERED");
 
-        return new ResponseEntity<SignupUserResponse>(userResponse,HttpStatus.CREATED);
+        return new ResponseEntity<>(userResponse,HttpStatus.CREATED);
     }
 }
